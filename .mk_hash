@@ -1,0 +1,3 @@
+#!/bin/bash
+hash=$(echo -n "gnd.pp.ua bugiii 710330" | sha1sum -)
+mkdir $hash
