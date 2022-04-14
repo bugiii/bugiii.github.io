@@ -10,8 +10,6 @@ zone_name=$3
 ## the dns record (sub-domain) should be modified; e.g. sub.example.com
 dns_record=$(hostname).$3
 dns_record=${dns_record//-/.}
-echo $dns_record
-exit
 
 # get the basic data
 ipv4=$(curl -s -X GET -4 https://ifconfig.co)
